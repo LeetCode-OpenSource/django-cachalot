@@ -109,7 +109,7 @@ def _find_subqueries_in_where(children):
         elif child_class is ExtraWhere:
             raise IsRawQuery
         else:
-            rhs = child.rhs
+            rhs = getattr(child, 'rhs', None)
             rhs_class = rhs.__class__
             if rhs_class is Query:
                 yield rhs
