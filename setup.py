@@ -12,11 +12,11 @@ with open(os.path.join(CURRENT_PATH, 'requirements.txt')) as f:
 
 
 setup(
-    name='django-cachalot',
+    name='lc-django-cachalot',
     version=__version__,
     author='Bertrand Bordage',
     author_email='bordage.bertrand@gmail.com',
-    url='https://github.com/noripyt/django-cachalot',
+    url='https://github.com/LeetCode-OpenSource/django-cachalot',
     description='Caches your Django ORM queries '
                 'and automatically invalidates them.',
     long_description=open('README.rst').read(),
